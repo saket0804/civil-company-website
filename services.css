@@ -1,0 +1,85 @@
+/* Services Banner */
+.services-banner {
+  background-color: #1b2549;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.services-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.services-banner p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Service Section */
+.service-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Individual Service Card */
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.service:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Styling */
+.service img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Text Content */
+.service-text {
+  flex: 1;
+}
+.service-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1b2549;
+}
+.service-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service img {
+    max-width: 100%;
+  }
+
+  .service-text h2 {
+    font-size: 22px;
+  }
+
+  .service-text p {
+    font-size: 15px;
+  }
+}
